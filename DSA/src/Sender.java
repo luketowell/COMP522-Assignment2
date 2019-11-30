@@ -1,9 +1,7 @@
 
 import javax.crypto.Cipher;
-import java.security.Key;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.SecureRandom;
+import java.security.*;
+import java.security.spec.DSAParameterSpec;
 import java.util.Scanner;
 
 public class Sender {
@@ -14,7 +12,8 @@ public class Sender {
         Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
         byte[] hashedInput = "".getBytes();
         SecureRandom random = new SecureRandom();
-        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
+        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA");
+        Signature dsa = Signature.getInstance("SHA256withDSA");
 
         // take the input text
         System.out.println("Please enter text:");
@@ -31,20 +30,20 @@ public class Sender {
         System.out.println("digest : " + Utils.toHex(hashedInput));
 
         //generate the keys
-        generator.initialize(512, random);
 
         //keys
-        KeyPair pair = generator.generateKeyPair();
-        Key pubKey = pair.getPublic();
-        Key privKey = pair.getPrivate();
+        keyGen.initialize(2048, random);
+        KeyPair pair = keyGen.generateKeyPair();
+        PublicKey pubKey = pair.getPublic();
+        PrivateKey privKey = pair.getPrivate();
 
-        //encrypt the hashed input and print out
-        cipher.init(Cipher.ENCRYPT_MODE, privKey);
-        byte[] cipherText = cipher.doFinal(hashedInput);
-        System.out.println("cipher: " + Utils.toHex(cipherText));
+        //Sign the hash using the private key
+        dsa.initSign(privKey);
+        dsa.update(hashedInput);
+        byte[] signedHash = dsa.sign();
 
         //generate the message
-        Message senderMessage = new Message(inputPlainText, cipherText, pubKey);
+        Message senderMessage = new Message(inputPlainText, signedHash, pubKey);
 
         //send the message to the verifier
         Verifier.verifyMessage(senderMessage);
