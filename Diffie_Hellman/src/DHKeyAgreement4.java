@@ -85,19 +85,38 @@ public class DHKeyAgreement4 {
         KeyAgreement davidKeyAgree = KeyAgreement.getInstance("DH");
         davidKeyAgree.init(davidKpair.getPrivate());
 
-
-        // Alice uses Carol's public key
-        Key ac = aliceKeyAgree.doPhase(carolKpair.getPublic(), false);
+        //gets previous persons Key
+        // Alice uses Davids's public key
+        Key ad = aliceKeyAgree.doPhase(davidKpair.getPublic(), false);
         // Bob uses Alice's public key
         Key ba = bobKeyAgree.doPhase(aliceKpair.getPublic(), false);
         // Carol uses Bob's public key
         Key cb = carolKeyAgree.doPhase(bobKpair.getPublic(), false);
-        // Alice uses Carol's result from above
-        aliceKeyAgree.doPhase(cb, true);
+        // David uses Carol's public key
+        Key dc = davidKeyAgree.doPhase(carolKpair.getPublic(), false);
+
+
+        //gets previous previous persons key
+        // Alice uses David's result from above
+        Key adc = aliceKeyAgree.doPhase(dc, false);
         // Bob uses Alice's result from above
-        bobKeyAgree.doPhase(ac, true);
+        Key bad = bobKeyAgree.doPhase(ad, false);
         // Carol uses Bob's result from above
-        carolKeyAgree.doPhase(ba, true);
+        Key cba = carolKeyAgree.doPhase(ba, false);
+        //David uses Carols result from above
+        Key dcb = davidKeyAgree.doPhase(cb, false);
+
+
+        //gets previous previous previous persons Key
+        // Alice uses Carol's result from above
+        aliceKeyAgree.doPhase(dcb, true);
+        // Bob uses davids's result from above
+        bobKeyAgree.doPhase(adc, true);
+        // Carol uses davids's result from above
+        carolKeyAgree.doPhase(bad, true);
+        //David uses bobs result from above
+        davidKeyAgree.doPhase(cba, true);
+
         // Alice, Bob and Carol compute their secrets
         byte[] aliceSharedSecret = aliceKeyAgree.generateSecret();
         System.out.println("Alice secret: " + toHexString(aliceSharedSecret));
@@ -105,7 +124,9 @@ public class DHKeyAgreement4 {
         System.out.println("Bob secret: " + toHexString(bobSharedSecret));
         byte[] carolSharedSecret = carolKeyAgree.generateSecret();
         System.out.println("Carol secret: " + toHexString(carolSharedSecret));
-        // Compare Alice and Bob
+        byte[] davidSharedSecret = davidKeyAgree.generateSecret();
+        System.out.println("David secret: " + toHexString(davidSharedSecret));
+        // Compare Alice and Bobx
         if (!java.util.Arrays.equals(aliceSharedSecret, bobSharedSecret))
             throw new Exception("Alice and Bob differ");
         System.out.println("Alice and Bob are the same");
@@ -113,6 +134,9 @@ public class DHKeyAgreement4 {
         if (!java.util.Arrays.equals(bobSharedSecret, carolSharedSecret))
             throw new Exception("Bob and Carol differ");
         System.out.println("Bob and Carol are the same");
+        if (!java.util.Arrays.equals(carolSharedSecret, davidSharedSecret))
+            throw new Exception("Carol and David differ");
+        System.out.println("Carol and David are the same");
     }
     /*
      * Converts a byte to hex digit and writes to the supplied buffer

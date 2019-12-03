@@ -74,18 +74,23 @@ public class DHKeyAgreement3 {
         System.out.println("CAROL: Initialize ...");
         KeyAgreement carolKeyAgree = KeyAgreement.getInstance("DH");
         carolKeyAgree.init(carolKpair.getPrivate());
+
+
         // Alice uses Carol's public key
         Key ac = aliceKeyAgree.doPhase(carolKpair.getPublic(), false);
         // Bob uses Alice's public key
         Key ba = bobKeyAgree.doPhase(aliceKpair.getPublic(), false);
         // Carol uses Bob's public key
         Key cb = carolKeyAgree.doPhase(bobKpair.getPublic(), false);
+
         // Alice uses Carol's result from above
         aliceKeyAgree.doPhase(cb, true);
         // Bob uses Alice's result from above
         bobKeyAgree.doPhase(ac, true);
         // Carol uses Bob's result from above
         carolKeyAgree.doPhase(ba, true);
+
+
         // Alice, Bob and Carol compute their secrets
         byte[] aliceSharedSecret = aliceKeyAgree.generateSecret();
         System.out.println("Alice secret: " + toHexString(aliceSharedSecret));
