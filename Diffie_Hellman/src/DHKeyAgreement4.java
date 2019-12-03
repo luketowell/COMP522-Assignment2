@@ -84,8 +84,9 @@ public class DHKeyAgreement4 {
         System.out.println("DAVID: Initialize ...");
         KeyAgreement davidKeyAgree = KeyAgreement.getInstance("DH");
         davidKeyAgree.init(davidKpair.getPrivate());
-
+        System.out.println("Iteration 0: All parties only have their own public keys");
         //gets previous persons Key
+        System.out.println("Iteration 1: All parties pass public key forward one.");
         // Alice uses Davids's public key
         Key ad = aliceKeyAgree.doPhase(davidKpair.getPublic(), false);
         // Bob uses Alice's public key
@@ -97,6 +98,7 @@ public class DHKeyAgreement4 {
 
 
         //gets previous previous persons key
+        System.out.println("Iteration 2: All parties pass public key forward two.");
         // Alice uses David's result from above
         Key adc = aliceKeyAgree.doPhase(dc, false);
         // Bob uses Alice's result from above
@@ -108,14 +110,18 @@ public class DHKeyAgreement4 {
 
 
         //gets previous previous previous persons Key
+        System.out.println("Iteration 3: All parties pass public key forward Three.");
         // Alice uses Carol's result from above
         aliceKeyAgree.doPhase(dcb, true);
         // Bob uses davids's result from above
         bobKeyAgree.doPhase(adc, true);
         // Carol uses davids's result from above
         carolKeyAgree.doPhase(bad, true);
-        //David uses bobs result from above
+        //David uses Bobs result from above
         davidKeyAgree.doPhase(cba, true);
+
+        System.out.println("All parties have all public keys for everyone in the network");
+
 
         // Alice, Bob and Carol compute their secrets
         byte[] aliceSharedSecret = aliceKeyAgree.generateSecret();
