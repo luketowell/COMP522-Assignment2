@@ -49,6 +49,10 @@ public class DHKeyAgreement4 {
         KeyPairGenerator aliceKpairGen = KeyPairGenerator.getInstance("DH");
         aliceKpairGen.initialize(2048);
         KeyPair aliceKpair = aliceKpairGen.generateKeyPair();
+
+        //Do you want to see the output from the shared key generation?
+        Boolean showKeys = false;
+
         // This DH parameters can also be constructed by creating a
         // DHParameterSpec object using agreed-upon values
         DHParameterSpec dhParamShared = ((DHPublicKey)aliceKpair.getPublic()).getParams();
@@ -84,7 +88,9 @@ public class DHKeyAgreement4 {
         System.out.println("DAVID: Initialize ...");
         KeyAgreement davidKeyAgree = KeyAgreement.getInstance("DH");
         davidKeyAgree.init(davidKpair.getPrivate());
+
         System.out.println("Iteration 0: All parties only have their own public keys");
+
         //gets previous persons Key
         System.out.println("Iteration 1: All parties pass public key forward one.");
         // Alice uses Davids's public key
@@ -111,27 +117,32 @@ public class DHKeyAgreement4 {
 
         //gets previous previous previous persons Key
         System.out.println("Iteration 3: All parties pass public key forward Three.");
-        // Alice uses Carol's result from above
+        // Alice uses David's result from above
         aliceKeyAgree.doPhase(dcb, true);
-        // Bob uses davids's result from above
+        // Bob uses Alice's result from above
         bobKeyAgree.doPhase(adc, true);
-        // Carol uses davids's result from above
+        // Carol uses Bob's result from above
         carolKeyAgree.doPhase(bad, true);
-        //David uses Bobs result from above
+        //David uses Carol's result from above
         davidKeyAgree.doPhase(cba, true);
 
         System.out.println("All parties have all public keys for everyone in the network");
 
 
         // Alice, Bob and Carol compute their secrets
+        System.out.println("Calculating shared secret key.");
         byte[] aliceSharedSecret = aliceKeyAgree.generateSecret();
-        System.out.println("Alice secret: " + toHexString(aliceSharedSecret));
         byte[] bobSharedSecret = bobKeyAgree.generateSecret();
-        System.out.println("Bob secret: " + toHexString(bobSharedSecret));
         byte[] carolSharedSecret = carolKeyAgree.generateSecret();
-        System.out.println("Carol secret: " + toHexString(carolSharedSecret));
         byte[] davidSharedSecret = davidKeyAgree.generateSecret();
-        System.out.println("David secret: " + toHexString(davidSharedSecret));
+
+        if (showKeys) {
+            System.out.println("Alice secret: " + toHexString(aliceSharedSecret));
+            System.out.println("Bob secret: " + toHexString(bobSharedSecret));
+            System.out.println("Carol secret: " + toHexString(carolSharedSecret));
+            System.out.println("David secret: " + toHexString(davidSharedSecret));
+        }
+
         // Compare Alice and Bobx
         if (!java.util.Arrays.equals(aliceSharedSecret, bobSharedSecret))
             throw new Exception("Alice and Bob differ");
