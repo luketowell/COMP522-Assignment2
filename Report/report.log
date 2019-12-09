@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.18)  4 DEC 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.18)  9 DEC 2019 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,78 +357,98 @@ LaTeX Info: Redefining \nameref on input line 46.
 \openout3 = `report.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
+Underfull \hbox (badness 10000) in paragraph at lines 57--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
+Underfull \hbox (badness 10000) in paragraph at lines 57--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--90
+Underfull \hbox (badness 10000) in paragraph at lines 57--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--90
+Underfull \hbox (badness 10000) in paragraph at lines 57--74
 
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Images/exchangeDiagram.png, id=58, 738.76pt x 425.59pt>
-File: Images/exchangeDiagram.png Graphic file (type png)
-<use Images/exchangeDiagram.png>
-Package pdftex.def Info: Images/exchangeDiagram.png  used on input line 96.
-(pdftex.def)             Requested size: 443.25941pt x 255.35596pt.
-<Images/KeyIteration.png, id=60, 326.21875pt x 321.2pt>
-File: Images/KeyIteration.png Graphic file (type png)
-<use Images/KeyIteration.png>
-Package pdftex.def Info: Images/KeyIteration.png  used on input line 106.
-(pdftex.def)             Requested size: 260.97534pt x 256.96034pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/exchangeDiagram.png>] [3 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/KeyIteration.png>] (/Users/luketowell/Development/COMP522/Assignment2/Report/../Diffie_Hellman/src/DHKeyAgreement4.java [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--146
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+
+ []
+
+<Images/exchangeDiagram.png, id=59, 738.76pt x 425.59pt>
+File: Images/exchangeDiagram.png Graphic file (type png)
+<use Images/exchangeDiagram.png>
+Package pdftex.def Info: Images/exchangeDiagram.png  used on input line 111.
+(pdftex.def)             Requested size: 443.25941pt x 255.35596pt.
+[2 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/exchangeDiagram.png>]
+<Images/KeyIteration.png, id=70, 326.21875pt x 321.2pt>
+File: Images/KeyIteration.png Graphic file (type png)
+<use Images/KeyIteration.png>
+Package pdftex.def Info: Images/KeyIteration.png  used on input line 121.
+(pdftex.def)             Requested size: 260.97534pt x 256.96034pt.
+ [3 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/KeyIteration.png>] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/MessageDigestor.java) [4] (/Users/luketowell/Development/COMP522/Assignment2/Report/../Diffie_Hellman/src/DHKeyAgreement4.java
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]) [7]
+Underfull \hbox (badness 10000) in paragraph at lines 157--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--165
 
  []
 
 (/Users/luketowell/Development/COMP522/Assignment2/Report/./Files/DHKeyAgreement4_output.txt)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (/Users/luketowell/Development/COMP522/Assignment2/Report/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4FAAFE4C7BA34C8D8BADC7BE10FF0F9F;720.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+(rerunfilecheck)             Checksum: A8E4FA06230744EE303DD119C57A96DF;777.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 8639 strings out of 492616
- 122933 string characters out of 6129480
- 515765 words of memory out of 5000000
- 12251 multiletter control sequences out of 15000+600000
+ 8676 strings out of 492616
+ 123693 string characters out of 6129480
+ 518765 words of memory out of 5000000
+ 12262 multiletter control sequences out of 15000+600000
  10223 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,40p,532b,1883s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,7n,40p,613b,1826s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/luketowell/Development/COMP522/Assignment2/Report/report.pdf (7 pages, 215621 bytes).
+Output written on /Users/luketowell/Development/COMP522/Assignment2/Report/report.pdf (8 pages, 218513 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 223 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 244 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

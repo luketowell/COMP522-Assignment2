@@ -3,12 +3,8 @@ import java.security.MessageDigest;
 /**
  *
  */
-public class MessageDigestor
-{
-    public static void main(
-            String[]    args)
-            throws Exception
-    {
+public class MessageDigestor {
+    public static void main(String[] args) throws Exception {
     }
 
     public static byte[] messageDigest(String input) throws Exception {
