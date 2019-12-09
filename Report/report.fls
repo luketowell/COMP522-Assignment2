@@ -118,6 +118,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/successMessage.png
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/successMessage.png
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/successMessage.png
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedMessage.png
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedMessage.png
+INPUT /Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedMessage.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm

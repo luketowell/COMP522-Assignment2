@@ -65,16 +65,37 @@ Hash functions are typically referred to as one way hashes. This is because it i
 \\
 \textit{Appendix A} is an example of the SHA1 hash function which takes a string input and digests the input using the SHA1 algorithm to produce a byte array hash. 
 \\
-input = \\
-output = \\
+Input = "This is a string"\\
+Output in the form of a hash using the SHA1 algorithm = f72017485fbf6423499baf9b240daa14f5f095a1\\
 \\
 The advantage of hash functions are that they are very simple to compute and are an effective way of telling if a message is genuine or if it has been manipulated.\\
 \\
-The disadvantage of Hash functions are that since the message is unencrypted, the content of the message is not secure so anyone can read the original message and as long as they dont change the hash then the hash will still match the original message. Hash functions also do not satisfy the weak and strong collision policys so it is possible you could generate a duplicate hash. A further issue with the SHA1 algorithm has been identified that it has a mathematical weakness which makes the outputs of the algorithm vulnerable to decryption.
+The disadvantage of Hash functions are that since the message is unencrypted, the content of the message is not secure so anyone can read the original message and as long as they dont change the hash then the hash will still match the original message. The hash is also easy to replace so the message could be read and manipulated by an illicit party who could then generate a new hash tag and send the message on to the original recipient with a new content and a new hash which will match when they attempt to compare generated hashes. Hash functions also do not satisfy the weak and strong collision policys so it is possible you could generate a duplicate hash. A further issue with the SHA1 algorithm has been identified that it has a mathematical weakness which makes the outputs of the algorithm vulnerable to decryption.
 
 \subsection{RSA + SHA1 method}
-combination of the hashing mechanism SHA1 with the RSA algorithm. How does it work, what does it do. \textit {Appendix B and C}.
-\textit { Appendix A } is used in order to provide added security and allows the user to ensure that the data has come from the correct person and hasnt been interfered with.
+The methodology discussed in this section is the combination of the hashing mechanism SHA1 with the RSA algorithm which combines the hashing algorithm discussed previously in \textit{Section 1.a.} and demonstrated in \textit{Appendix A} together with the use of public and private keys in order to create a more secure message sharing methodology. \\
+\\
+The combination of RSA and SHA1 hashing allows a sender (\textit{Appendix B}) to generate a hash using a hash algorithm e.g. SHA1. Then this hash tag is encrypted using a private key which has been generated as part of the key pair to produce a ciphertext.\\
+\\
+The ciphertext, plain text message and corresponding public key is sent to the verifier.\\
+\\
+The verifier then uses the same hashing algorithm and the plain text message to generate their own hash. They also decrypt the ciphertext using the public key provided in the message. Once the verifier has their own hash and has the decrypted hash they can compare the values to see if they match. As in Hash functions if the hash tags do not match then the message is untrustworthy and needs to be discarded. \\
+\\
+An example of how a tampered with message can be detected can be created using \textit{Appendix B} and \textit{Appendix C}. In the experiment below I have generated a message containing the string "This is a sample message" which has then been encrypted and sent to the receiver class. However on the way to the varifier the message has been intercepted and the plain text has been changed to "This is not a sample message". As you can see from the screen shot below because the message has been changed the hash no longer matches and the message cannot be trusted.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Images/successMessage.png}
+  \caption{Output of non intercepted message}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Images/interceptedMessage.png}
+  \caption{Output of intercepted message detection}
+\end{figure}
+
 \subsection{DSA method}
 DSA  \textit{Appendix D} How does it work, what does it do, why does it do that and so on.
 \subsection{HMAC-SHA256 method}
