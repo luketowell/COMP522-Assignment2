@@ -27,7 +27,7 @@ public class Sender {
             System.out.println("error: " + e);
             System.exit(1);
         }
-        System.out.println("digest : " + Utils.toHex(hashedInput));
+        System.out.println("sender digest : " + Utils.toHex(hashedInput));
 
         // generate the keys
         generator.initialize(512, random);
@@ -41,6 +41,8 @@ public class Sender {
         cipher.init(Cipher.ENCRYPT_MODE, privKey);
         byte[] cipherText = cipher.doFinal(hashedInput);
         System.out.println("cipher: " + Utils.toHex(cipherText));
+        System.out.println("Message sent by sender: " + inputPlainText);
+
 
         // generate the message
         Message senderMessage = new Message(inputPlainText, cipherText, pubKey);

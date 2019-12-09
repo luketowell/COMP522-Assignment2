@@ -14,6 +14,10 @@ public class Verifier {
         // Sender digest
         String senderDigest = Utils.toHex(plainText);
 
+        //String interceptedMessage = "This is not a sample message";
+
+        System.out.println("message received by verifier: " + senderMessage.getOriginalMessage());
+
         //calculates own hashed message
         try{
             verifierHashedInput = MessageDigestor.messageDigest(senderMessage.getOriginalMessage());
@@ -28,12 +32,12 @@ public class Verifier {
 
         if( verifierDigest.equals(senderDigest)){
             System.out.println("digest values match");
-            System.out.println("verifier hash: " + senderDigest);
-            System.out.println("sender hash  : " + verifierDigest);
+            System.out.println("verifier hash: " + verifierDigest);
+            System.out.println("sender hash  : " + senderDigest);
         } else {
             System.out.println("hashed values dont match this message is not trustworthy.");
-            System.out.println("verifier hash: " + senderDigest);
-            System.out.println("sender hash  : " + verifierDigest) ;
+            System.out.println("verifier hash: " + verifierDigest);
+            System.out.println("sender hash  : " + senderDigest) ;
         }
 
     }
