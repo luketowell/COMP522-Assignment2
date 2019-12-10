@@ -6,6 +6,10 @@
 \BOOKMARK [1][-]{section.2}{Diffie-Hellman with 4 parties}{}% 6
 \BOOKMARK [2][-]{subsection.2.1}{Design for the Diffie-Hellman Protocol}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.2}{Implementation of the Protocol with 4 Parties}{section.2}% 8
-\BOOKMARK [1][-]{appendix.A}{RSA Message Digestor}{}% 9
-\BOOKMARK [1][-]{appendix.B}{Diffie Hellman 4 Party Key Exchange}{}% 10
-\BOOKMARK [1][-]{appendix.C}{Diffie Hellman 4 Party Output}{}% 11
+\BOOKMARK [1][-]{appendix.A}{SHA1 Message Digestor}{}% 9
+\BOOKMARK [1][-]{appendix.B}{RSA Encryption + SHA1 Hash Sender Program}{}% 10
+\BOOKMARK [1][-]{appendix.C}{RSA Encryption + SHA1 Hash Verifier Program}{}% 11
+\BOOKMARK [1][-]{appendix.D}{DSA Sender Program}{}% 12
+\BOOKMARK [1][-]{appendix.E}{DSA Verifier Program}{}% 13
+\BOOKMARK [1][-]{appendix.F}{Diffie Hellman 4 Party Key Exchange}{}% 14
+\BOOKMARK [1][-]{appendix.G}{Diffie Hellman 4 Party Output}{}% 15

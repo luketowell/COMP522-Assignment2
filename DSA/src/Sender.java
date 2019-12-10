@@ -12,10 +12,12 @@ public class Sender {
         Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
         byte[] hashedInput = "".getBytes();
         SecureRandom random = new SecureRandom();
+
+        //Initiate KeyPairGenerator and Set signature type.
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA");
         Signature dsa = Signature.getInstance("SHA256withDSA");
 
-        // take the input text
+        // take the input text from user.
         System.out.println("Please enter text:");
         String inputPlainText = input.nextLine();
 
@@ -41,6 +43,8 @@ public class Sender {
         dsa.initSign(privKey);
         dsa.update(hashedInput);
         byte[] signedHash = dsa.sign();
+
+        System.out.println("DSA signature hash: \n" + Utils.toHex(signedHash));
 
         //generate the message
         Message senderMessage = new Message(inputPlainText, signedHash, pubKey);
