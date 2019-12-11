@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.18)  10 DEC 2019 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.18)  11 DEC 2019 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -376,197 +376,195 @@ LaTeX Info: Redefining \nameref on input line 47.
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
+<Images/digestOutput.png, id=65, 424.58624pt x 56.21pt>
+File: Images/digestOutput.png Graphic file (type png)
+<use Images/digestOutput.png>
+Package pdftex.def Info: Images/digestOutput.png  used on input line 72.
+(pdftex.def)             Requested size: 212.2926pt x 28.10492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--75
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--75
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+ []
+
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/luketowell/Development/COMP522/Assignment2/Report/Images/digestOutput.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 80--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
+Underfull \hbox (badness 10000) in paragraph at lines 80--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
+Underfull \hbox (badness 10000) in paragraph at lines 80--89
 
  []
 
 
-Underfull \vbox (badness 1460) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 80--89
 
- [1
+ []
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Images/successMessage.png, id=75, 972.63374pt x 150.5625pt>
+<Images/successMessage.png, id=79, 972.63374pt x 150.5625pt>
 File: Images/successMessage.png Graphic file (type png)
 <use Images/successMessage.png>
-Package pdftex.def Info: Images/successMessage.png  used on input line 89.
+Package pdftex.def Info: Images/successMessage.png  used on input line 92.
 (pdftex.def)             Requested size: 486.31567pt x 75.28105pt.
-<Images/interceptedMessage.png, id=77, 972.63374pt x 128.48pt>
+<Images/interceptedMessage.png, id=80, 972.63374pt x 128.48pt>
 File: Images/interceptedMessage.png Graphic file (type png)
 <use Images/interceptedMessage.png>
-Package pdftex.def Info: Images/interceptedMessage.png  used on input line 96.
+Package pdftex.def Info: Images/interceptedMessage.png  used on input line 99.
 (pdftex.def)             Requested size: 486.31567pt x 64.23984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 104--110
 
  []
 
 [2 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/successMessage.png> </Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedMessage.png>]
-<Images/successDSAMessage.png, id=86, 900.36375pt x 221.82875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+<Images/successDSAMessage.png, id=89, 900.36375pt x 221.82875pt>
 File: Images/successDSAMessage.png Graphic file (type png)
 <use Images/successDSAMessage.png>
-Package pdftex.def Info: Images/successDSAMessage.png  used on input line 111.
+Package pdftex.def Info: Images/successDSAMessage.png  used on input line 117.
 (pdftex.def)             Requested size: 450.18077pt x 110.9141pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-<Images/interceptedDSAMessage.png, id=87, 880.28876pt x 199.74625pt>
+<Images/interceptedDSAMessage.png, id=90, 880.28876pt x 199.74625pt>
 File: Images/interceptedDSAMessage.png Graphic file (type png)
 <use Images/interceptedDSAMessage.png>
-Package pdftex.def Info: Images/interceptedDSAMessage.png  used on input line 119.
+Package pdftex.def Info: Images/interceptedDSAMessage.png  used on input line 125.
 (pdftex.def)             Requested size: 440.1433pt x 99.87288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-<Images/interceptedKeyMessage.png, id=88, 894.34125pt x 178.6675pt>
+<Images/interceptedKeyMessage.png, id=91, 894.34125pt x 178.6675pt>
 File: Images/interceptedKeyMessage.png Graphic file (type png)
 <use Images/interceptedKeyMessage.png>
-Package pdftex.def Info: Images/interceptedKeyMessage.png  used on input line 127.
+Package pdftex.def Info: Images/interceptedKeyMessage.png  used on input line 133.
 (pdftex.def)             Requested size: 447.16953pt x 89.33353pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--146
-
- []
-
 [3 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/successDSAMessage.png> </Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedDSAMessage.png> </Users/luketowell/Development/COMP522/Assignment2/Report/Images/interceptedKeyMessage.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--163
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--163
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--171
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--171
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
 
-<Images/keyExchange.png, id=99, 634.37pt x 559.08875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--177
+
+ []
+
+[4]
+<Images/keyExchange.png, id=109, 634.37pt x 559.08875pt>
 File: Images/keyExchange.png Graphic file (type png)
 <use Images/keyExchange.png>
-Package pdftex.def Info: Images/keyExchange.png  used on input line 177.
+Package pdftex.def Info: Images/keyExchange.png  used on input line 183.
 (pdftex.def)             Requested size: 380.62492pt x 335.45583pt.
 
-Underfull \vbox (badness 2564) has occurred while \output is active []
-
- [4]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 192.
+(caption)                particular \caption on input line 193.
 See the caption package documentation for explanation.
 
-[5 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/keyExchange.png>] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/MessageDigestor.java) [6] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/Sender.java) [7] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/Verifier.java) [8] (/Users/luketowell/Development/COMP522/Assignment2/Report/../DSA/src/Sender.java) [9] (/Users/luketowell/Development/COMP522/Assignment2/Report/../DSA/src/Verifier.java) [10] (/Users/luketowell/Development/COMP522/Assignment2/Report/../Diffie_Hellman/src/DHKeyAgreement4.java
+[5 </Users/luketowell/Development/COMP522/Assignment2/Report/Images/keyExchange.png>] [6] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/MessageDigestor.java) [7] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/Sender.java) [8] (/Users/luketowell/Development/COMP522/Assignment2/Report/../RSAEncryptionSHA1/src/Verifier.java) [9] (/Users/luketowell/Development/COMP522/Assignment2/Report/../DSA/src/Sender.java) [10] (/Users/luketowell/Development/COMP522/Assignment2/Report/../DSA/src/Verifier.java) [11] (/Users/luketowell/Development/COMP522/Assignment2/Report/../Diffie_Hellman/src/DHKeyAgreement4.java
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]) [13]
-Underfull \hbox (badness 10000) in paragraph at lines 231--239
+ [13]) [14]
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--239
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
 
  []
 
 (/Users/luketowell/Development/COMP522/Assignment2/Report/./Files/DHKeyAgreement4_output.txt)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (/Users/luketowell/Development/COMP522/Assignment2/Report/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 511DB28BEB16E7FBAFA381138C756A77;1048.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+(rerunfilecheck)             Checksum: 53B99A4C9969A5AF12D8950612A5D1F1;1080.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  ) 
 Here is how much of TeX's memory you used:
- 10047 strings out of 492616
- 148537 string characters out of 6129480
+ 10054 strings out of 492616
+ 148687 string characters out of 6129480
  539152 words of memory out of 5000000
- 13384 multiletter control sequences out of 15000+600000
+ 13388 multiletter control sequences out of 15000+600000
  10223 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,40p,898b,1826s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,40p,902b,1826s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/luketowell/Development/COMP522/Assignment2/Report/report.pdf (14 pages, 499837 bytes).
+Output written on /Users/luketowell/Development/COMP522/Assignment2/Report/report.pdf (15 pages, 512140 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 681 compressed objects within 7 object streams
- 471 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 685 compressed objects within 7 object streams
+ 473 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
